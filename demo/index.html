@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>网页附件助手本地示例</title>
+    <style>
+        :root { color-scheme: light dark; font: 1rem/1.65 system-ui, sans-serif; }
+        body { max-width: 42rem; margin: 3rem auto; padding: 0 1.25rem; }
+        h1 { line-height: 1.2; }
+        li + li { margin-block-start: .4rem; }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>网页附件助手本地示例</h1>
+        <p>安装脚本后，打开脚本管理器的「网页附件助手」菜单。列表应出现三个附件。</p>
+        <ul>
+            <li><a href="/attachments/missing.txt" download>缺失附件</a>（用于观察失败提示）</li>
+            <li><a href="/attachments/notes.txt" download="notes.txt">练习笔记</a></li>
+            <li><a href="/attachments/notes.txt#duplicate" download="notes.txt">练习笔记的重复链接</a></li>
+            <li><a href="/attachments/checklist.txt" download>练习清单</a></li>
+            <li><a href="/attachments/readme.txt">普通链接</a></li>
+            <li><a href="{{otherOrigin}}/attachments/readme.txt" download>不同源的本地链接</a></li>
+        </ul>
+        <p>点击「下载全部」后，缺失附件会显示失败，练习笔记和练习清单仍可保存。</p>
+    </main>
+</body>
+</html>
